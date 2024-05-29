@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <script src="qrcode.min.js"></script>
+  </head>
+  <body>
+    <div id="profile">
+        <h1>Profile</h1>
+    
+        <button id="enable-2fa-button">Enable 2FA</button>
+        <button id="disable-2fa-button" style="display: none;">Disable 2FA</button>
+        <div id="qrcode-container"></div>
+        <div id="otp-form-container" style="display: none;">
+            <form id="otp-form">
+                <label for="otp">Enter OTP:</label>
+                <input type="text" id="otp" name="otp" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <button id="logout-button">Logout</button>
+        <div id="response-message"></div>
+    </div>
+
+    <script src="profile_script.js"></script>
+  </body>
+</html>
